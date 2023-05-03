@@ -1,31 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 15:04:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/03 12:38:39 by pabertha         ###   ########.fr       */
+/*   Created: 2023/05/03 16:58:45 by pabertha          #+#    #+#             */
+/*   Updated: 2023/05/03 17:15:23 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+// include "libft.h"
 
-int ft_isalpha(int c)
-{
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (c);
-    else
-        return (0);
-}
-
-#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    printf("%d\n", ft_isalpha('a'));
-    printf("%d\n", isalpha('a'));
-    return (0);
+
+    char    result[50] = "sa";
+
+    // result[0] = 's';
+    // result[1] = 'a';
+    // result[2] = 'l';
+    // result[3] = 'u';
+    // result[4] = 't';
+    // result[5] = '\0';
+    
+
+    printf("AVANT = %s\n\n\n", result);
+
+    
+    memset(result, 'W', 10);
+    
+
+    printf("APRES = %s", result);
+
+
+    // printf("%d\n", memset());
+    return(0);
 }

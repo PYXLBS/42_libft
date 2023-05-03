@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 15:04:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/03 12:38:39 by pabertha         ###   ########.fr       */
+/*   Created: 2023/05/03 12:20:59 by pabertha          #+#    #+#             */
+/*   Updated: 2023/05/03 12:35:58 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
+#include <stddef.h>
 
-int ft_isalpha(int c)
+size_t ft_strlen(const char *s)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-        return (c);
-    else
-        return (0);
+    int i;
+    
+    i = 0;
+    while (s[i] != '\0')
+        i++;
+    return(i);
 }
 
-#include <ctype.h>
+#include <string.h>
 #include <stdio.h>
 
-int main(void)
+int main()
 {
-    printf("%d\n", ft_isalpha('a'));
-    printf("%d\n", isalpha('a'));
-    return (0);
+    printf("%ld\n", ft_strlen("abcde"));
+    printf("%ld\n", strlen("abcde"));
+    return(0);
 }
