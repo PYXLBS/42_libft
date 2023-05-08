@@ -6,26 +6,26 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:45:37 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/03 12:37:42 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/08 18:01:36 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
-        return (c);
-    else
-        return (0);
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122) || (c >= 48 && c <= 57))
+		return (c);
+	else
+		return (0);
 }
 
 #include <ctype.h>
 #include <stdio.h>
 
-int main(void)
+int	main(void)
 {
-    printf("%d\n", ft_isalnum('a'));
-    printf("%d\n", isalnum('a'));
-    return (0);
+	printf("%d\n", ft_isalnum('a'));
+	printf("%d\n", isalnum('a'));
+	return (0);
 }

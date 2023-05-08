@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/08 17:54:54 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/08 18:06:28 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ int	ft_atoi(const char *nptr)
 #include <stdlib.h>
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-    printf("%d\n", ft_atoi(" ---+--+1234ab567"));
-    printf("%d\n", atoi(" ---+--+1234ab567"));
-    return (0);
+	printf("%d\n", ft_atoi(" ---+--+1234ab567"));
+	printf("%d\n", atoi(" ---+--+1234ab567"));
+	return (0);
 }

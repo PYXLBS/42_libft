@@ -6,21 +6,21 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/08 17:14:48 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/08 18:37:59 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // #include "libft.h"
 
-char    *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-    
+
 }
 
 #include <string.h>
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-    return(0);
+	return (0);
 }
