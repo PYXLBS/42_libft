@@ -6,23 +6,23 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/03 16:50:03 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/08 17:16:33 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// include "libft.h"
+// #include "libft.h"
 
-/*int ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
     
-}*/
+}
 
 #include <stdlib.h>
 #include <stdio.h>
 
 int main()
 {
-    //printf("%d\n", ft_atoi(" ---+--+1234ab567"));
+    printf("%d\n", ft_atoi(" ---+--+1234ab567"));
     printf("%d\n", atoi(" ---+--+1234ab567"));
     return (0);
 }
