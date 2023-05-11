@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 15:06:47 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:53:35 by pabertha         ###   ########.fr       */
+/*   Created: 2023/05/11 17:44:12 by pabertha          #+#    #+#             */
+/*   Updated: 2023/05/11 17:49:44 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_toupper(int c)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (c >= 97 && c <= 122)
-		return (c - 32);
-	return (c);
+
 }
 
 int	main(void)
 {
-	printf("%c\n", ft_toupper('a'));
-	printf("%c\n", toupper('a'));
 	return (0);
 }
