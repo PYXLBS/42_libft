@@ -6,11 +6,11 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:48:40 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/08 18:19:13 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 16:12:39 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

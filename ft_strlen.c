@@ -6,11 +6,11 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:20:59 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/08 18:35:45 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 16:13:33 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 #include <stddef.h>
 
 size_t	ft_strlen(const char *s)

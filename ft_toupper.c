@@ -6,11 +6,11 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 15:06:47 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/08 18:40:07 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 16:13:56 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
