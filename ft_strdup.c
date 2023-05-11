@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 16:13:25 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 17:05:57 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,6 @@ char	*ft_strdup(const char *s)
 {
 
 }
-
-#include <string.h>
-#include <stdio.h>
 
 int	main(void)
 {

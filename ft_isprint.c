@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:50:42 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 16:12:59 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 17:05:40 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,6 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
-#include <ctype.h>
-#include <stdio.h>
 
 int	main(void)
 {

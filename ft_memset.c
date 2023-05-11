@@ -6,20 +6,16 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:58:45 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 16:13:18 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/11 17:05:52 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
 
 }
-
-#include <string.h>
-#include <stdio.h>
 
 int	main(void)
 {
