@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 17:19:04 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/19 17:23:30 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int	main(void)
 	printf("%d\n", ft_atoi("++1234ab567"));
 	printf("%d\n", ft_atoi("1234ab567"));
 	printf("%d\n", ft_atoi("qwerty1234ab567"));
-	printf("%s\n", "separation");
+	printf("%s\n", "test");
 	printf("%d\n", atoi(" ---+--+1234ab567"));
 	printf("%d\n", atoi("---+--+1234ab567"));
 	printf("%d\n", atoi("-+1234ab567"));
