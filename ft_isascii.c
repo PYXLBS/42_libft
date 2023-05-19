@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:48:40 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:05:35 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/19 15:07:48 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return (c);
+		return (1);
 	else
 		return (0);
 }

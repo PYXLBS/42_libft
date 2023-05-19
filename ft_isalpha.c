@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 15:04:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:05:32 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/19 15:07:42 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (c);
+		return (1);
 	else
 		return (0);
 }
