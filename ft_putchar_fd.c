@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:31:10 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:32:12 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/19 20:14:41 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-
+	write(fd, &c, 1);
 }
 
+/*
 int	main(void)
 {
+	ft_putchar_fd();
 	return (0);
 }
+*/
