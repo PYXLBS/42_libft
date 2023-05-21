@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:05:28 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/21 10:11:28 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
-{
+// void	*ft_calloc(size_t nmemb, size_t size)
+// {
 
-}
+// }
 
-int	main(void)
-{
-	return (0);
-}
+// int	main(void)
+// {
+// 	return (0);
+// }
