@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/23 23:16:05 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/24 00:36:57 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,23 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
+	size_t	d;
+	size_t	s;
 
-	i = 0;
-	while (src[i] != '\0')
+	d = 0;
+	s = 0;
+	while (src[s] != '\0')
 	{
-		if (size > i + 1)
-			dst[i] = src[i];
-		i++;
+		if (size > d + 1)
+		{
+			dst[d] = src[s];
+			d++;
+		}
+		s++;
 	}
 	if (size != 0)
-		dst[i] = '\0';
-	return (i);
+		dst[d] = '\0';
+	return (s);
 }
 
 /*
