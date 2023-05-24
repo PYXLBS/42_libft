@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/24 16:17:00 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/24 16:59:48 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 /*
 int	main(void)
 {
+	ft_strncmp();
 	return (0);
 }
 */

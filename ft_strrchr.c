@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/24 13:24:38 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/24 16:59:27 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ char	*ft_strrchr(const char *s, int c)
 /*
 int	main(void)
 {
+	ft_strrchr();
 	return (0);
 }
 */
