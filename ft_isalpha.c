@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 15:04:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 15:07:42 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:23:54 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,4 @@ int	ft_isalpha(int c)
 		return (1);
 	else
 		return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_isalpha('a'));
-	printf("%d\n", isalpha('a'));
-	return (0);
 }

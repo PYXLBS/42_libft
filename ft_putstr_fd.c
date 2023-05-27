@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:21:12 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 20:16:06 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:26:28 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,3 @@ void	ft_putstr_fd(char *s, int fd)
 		c++;
 	write(fd, s, c);
 }
-
-/*
-int	main(void)
-{
-	ft_putstr_fd();
-	return (0);
-}
-*/

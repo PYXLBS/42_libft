@@ -6,18 +6,16 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/24 16:59:16 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:31:05 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-#include <stddef.h>
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t b;
-	size_t l;
+	size_t	b;
+	size_t	l;
 
 	b = 0;
 	l = 0;
@@ -38,11 +36,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-/*
-int	main(void)
-{
-	ft_strnstr();
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/27 12:36:12 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:28:56 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,3 @@ char	*ft_strdup(const char *s)
 		return (u);
 	return (0);
 }
-
-/*
-int	main(void)
-{
-	ft_strdup();
-	return (0);
-}
-*/

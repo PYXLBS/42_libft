@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 18:04:44 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:22:37 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,25 +39,5 @@ int	ft_atoi(const char *nptr)
 		}
 		return (d * e);
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_atoi(" ---+--+1234ab567"));
-	printf("%d\n", ft_atoi("---+--+1234ab567"));
-	printf("%d\n", ft_atoi("-+1234ab567"));
-	printf("%d\n", ft_atoi("+1234ab567"));
-	printf("%d\n", ft_atoi("++1234ab567"));
-	printf("%d\n", ft_atoi("1234ab567"));
-	printf("%d\n", ft_atoi("qwerty1234ab567"));
-	printf("%s\n", " ");
-	printf("%d\n", atoi(" ---+--+1234ab567"));
-	printf("%d\n", atoi("---+--+1234ab567"));
-	printf("%d\n", atoi("-+1234ab567"));
-	printf("%d\n", atoi("+1234ab567"));
-	printf("%d\n", atoi("++1234ab567"));
-	printf("%d\n", atoi("1234ab567"));
-	printf("%d\n", atoi("qwerty1234ab567"));
 	return (0);
 }

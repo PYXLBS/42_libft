@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 14:57:55 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:06:14 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/27 13:31:58 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,4 @@ int	ft_tolower(int c)
 	if (c >= 65 && c <= 90)
 		return (c + 32);
 	return (c);
-}
-
-int	main(void)
-{
-	printf("%c\n", ft_tolower('A'));
-	printf("%c\n", tolower('A'));
-	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/24 16:59:27 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:31:36 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strrchr(const char *s, int c)
 {
 	int	d;
-	
+
 	d = 0;
 	while (s[d] != '\0')
 		d++;
@@ -27,11 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-
-/*
-int	main(void)
-{
-	ft_strrchr();
-	return (0);
-}
-*/

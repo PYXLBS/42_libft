@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:32:42 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 20:14:03 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:25:33 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-/*
-int	main(void)
-{
-	ft_putendl_fd();
-	return (0);
-}
-*/

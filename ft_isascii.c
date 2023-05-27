@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:48:40 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/19 15:07:48 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:24:06 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,4 @@ int	ft_isascii(int c)
 		return (1);
 	else
 		return (0);
-}
-
-int	main(void)
-{
-	printf("%d\n", ft_isascii('a'));
-	printf("%d\n", isascii('a'));
-	return (0);
 }

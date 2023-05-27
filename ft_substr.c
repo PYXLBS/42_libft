@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:29:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/25 13:33:37 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:31:47 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	return (str);
 }
-
-/*
-int	main(void)
-{
-	return (0);
-}
-*/

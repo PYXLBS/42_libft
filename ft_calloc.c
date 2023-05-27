@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/24 16:36:04 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/27 13:23:23 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		((char *)s)[c] = 0;
 	return (s);
 }
-
-/*
-int	main(void)
-{
-	ft_calloc();
-	return (0);
-}
-*/
