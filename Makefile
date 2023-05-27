@@ -6,7 +6,7 @@
 #    By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/12 17:16:25 by pabertha          #+#    #+#              #
-#    Updated: 2023/05/19 16:07:17 by pyxlbs           ###   ########.fr        #
+#    Updated: 2023/05/27 13:14:21 by pyxlbs           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,8 @@ bonus : $(OBJ) $(OBJ_BONUS)
 %.o : %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 	
-clean : rm -f $(OBJ) $(OBJ_BONUS)
+clean :
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean : clean
 		rm -f $(NAME)
