@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/25 18:51:39 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/28 17:51:03 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,16 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t	i;
-	const unsigned char	*str;
+	size_t	o;
+	unsigned char	*str;
 
-	str = s;
-	i = 0;
-	while (i < n)
+	str = (unsigned char *)s;
+	o = 0;
+	while (n > o)
 	{
-		if (str[i] == c)
-			return ((void *)(&str[i]));
-		i++;
+		if (str[o] == (unsigned char)c)
+			return ((void *)(str + o));
+		o++;
 	}
-}
-
-int	main(void)
-{
 	return (0);
 }
