@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/27 13:28:56 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 16:51:24 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(const char *s)
 	t = 0;
 	u = malloc(t + 1);
 	if (u == NULL)
-		return (0);
+		return (NULL);
 	while (s[t] != '\0')
 	{
 		u[t] = s[t];
