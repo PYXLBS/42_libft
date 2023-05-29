@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:28:23 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/29 15:19:18 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 16:04:19 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		a;
 	int		z;
 	int		i;
-	int		j;
 	char	*s2;
 
 	a = 0;
 	z = 0;
 	i = 0;
-	j = a;
 	s2 = (char *)malloc(z - a + 2);
 	if (s2 == NULL)
 		return (0);
@@ -51,11 +49,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 			z++;
 		z--;
 	}
-	while (z >= j)
+	while (z >= a)
 	{
-		s2[i] = s1[j];
+		s2[i] = s1[a];
 		i++;
-		j++;
+		a++;
 	}
 	return (s2);
 }
