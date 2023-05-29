@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:29:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/27 13:31:47 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 15:49:56 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (str == NULL)
 		return (0);
 	str[len] = '\0';
-	while (len--)
+	while (len > 0)
 	{
 		if (s[start + len] == '\0')
 			str[len] = '\0';
 		else
 			str[len] = s[start + len];
+		len--;
 	}
 	return (str);
 }

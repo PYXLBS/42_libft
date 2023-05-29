@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/27 13:22:37 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 15:21:32 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,30 +14,30 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	c;
-	int	d;
-	int	e;
+	int	i;
+	int	j;
+	int	k;
 
-	c = 0;
-	d = 1;
-	e = 0;
-	while (nptr[c] != '\0')
+	i = 0;
+	j = 1;
+	k = 0;
+	while (nptr[i] != '\0')
 	{
-		while ((nptr[c] > 8 && nptr[c] < 14) || (nptr[c] == 32))
-			c++;
-		if (nptr[c] == 43)
-			c++;
-		else if (nptr[c] == 45)
+		while ((nptr[i] > 8 && nptr[i] < 14) || (nptr[i] == 32))
+			i++;
+		if (nptr[i] == 43)
+			i++;
+		else if (nptr[i] == 45)
 		{
-			d = -d;
-			c++;
+			j = -j;
+			i++;
 		}
-		while (nptr[c] > 47 && nptr[c] < 58)
+		while (nptr[i] > 47 && nptr[i] < 58)
 		{
-			e = (e * 10) + (nptr[c] - 48);
-			c++;
+			k = (k * 10) + (nptr[i] - 48);
+			i++;
 		}
-		return (d * e);
+		return (j * k);
 	}
 	return (0);
 }
