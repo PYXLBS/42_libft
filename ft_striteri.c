@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:23:36 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/11 17:31:50 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/05/29 17:22:42 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
+	unsigned int    i;
 
-}
-
-int	main(void)
-{
-	return (0);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
