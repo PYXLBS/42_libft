@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:23:36 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/29 17:22:42 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 20:16:59 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int    i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i] != '\0')

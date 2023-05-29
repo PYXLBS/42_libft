@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:27:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/29 16:52:30 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/29 20:18:39 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-    unsigned int	i;
-    char	*str;
+	unsigned int	i;
+	char	*str;
 
 	i = 0;
 	str = (char *)malloc((i + 1));
