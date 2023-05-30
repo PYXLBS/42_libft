@@ -25,11 +25,10 @@ int	ft_atoi(const char *nptr)
 	{
 		while ((nptr[i] > 8 && nptr[i] < 14) || (nptr[i] == 32))
 			i++;
-		if (nptr[i] == 43)
-			i++;
-		else if (nptr[i] == 45)
+		if (nptr[i] == 43 || nptr[i] == 45)
 		{
-			j = -j;
+			if (nptr[i] == 45)
+				j = -j;
 			i++;
 		}
 		while (nptr[i] > 47 && nptr[i] < 58)
