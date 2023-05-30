@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:25:57 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/29 16:51:32 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/30 16:44:16 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i1;
-	int	i2;
+	int		i1;
+	int		i2;
 	char	*s3;
 
 	i1 = 0;

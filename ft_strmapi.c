@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:27:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/29 20:18:39 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/05/30 16:44:36 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char	*str;
+	char			*str;
 
 	i = 0;
 	str = (char *)malloc((i + 1));
