@@ -1,0 +1,13 @@
+name: Auto Comment
+on: [pull_request]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: wow-actions/auto-comment@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          pullRequestOpened: |
+            Hello! Thanks for your pull request.
+            
+            A bot will automatically merge your PR if you can get [one contributor](https://github.com/alelievr/libft-unit-test/graphs/contributors) to approve it.
