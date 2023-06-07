@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/06 22:24:46 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/06/07 16:39:46 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	m;
+	size_t	o;
 
-	m = 0;
+	o = 0;
 	if (dest > src)
 	{
 		while (n > 0)
@@ -27,10 +27,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		while (n > m)
+		while (n > o)
 		{
-			((unsigned char *)dest)[m] = ((unsigned char *)src)[m];
-			m++;
+			((unsigned char *)dest)[o] = ((unsigned char *)src)[o];
+			o++;
 		}
 	}
 	return (dest);

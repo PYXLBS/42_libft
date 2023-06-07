@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:32:42 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:17:28 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/07 16:41:21 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	c;
+	int	i;
 
-	c = 0;
-	while (s[c] != '\0')
+	i = 0;
+	while (s[i] != '\0')
 	{
-		write(fd, &s[c], 1);
-		c++;
+		write(fd, &s[i], 1);
+		i++;
 	}
 	write(fd, "\n", 1);
 }
