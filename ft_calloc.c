@@ -6,7 +6,7 @@
 /*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/07 16:36:08 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/06/21 17:49:24 by pyxlbs           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	i = nmemb * size;
 	if (size != 0 && nmemb > (SIZE_MAX / size))
-		return NULL;
+		return (NULL);
 	if (size == 0 || i == 0)
 		s = malloc(1);
 	else
