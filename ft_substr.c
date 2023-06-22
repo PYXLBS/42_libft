@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:29:30 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/07 00:47:29 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/06/22 23:13:55 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,19 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
 	char	*str;
+	size_t	i;
 
-	i = 0;
-	str = malloc(i + 1);
-	if (str == NULL)
-		return (NULL);
-	while (len > i && s[start + i] != '\0')
+	i = ft_strlen(s);
+	if (start >= i)
+		len = 0;
+	else if (start + len > i)
+		len = i - start;
+	str = malloc(len + 1);
+	if (str != NULL)
 	{
-		str[i] = s[start + i];
-		i++;
+		ft_memcpy(str, &s[start], len);
+		str[len] = '\0';
 	}
 	return (str);
 }
