@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/21 17:49:24 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/06/22 20:12:44 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,5 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		s = malloc(i);
 	if (s == NULL)
 		return (NULL);
-	while (i > 0)
-	{
-		i--;
-		((char *)s)[i] = 0;
-	}
-	return (s);
+	return (bzero(s, i));
 }
