@@ -6,26 +6,11 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/22 20:11:51 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/23 00:19:05 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	is_whitespace(int ws)
-{
-	return ((ws > 8 && ws < 14) || ws == 32);
-}
-
-static int	is_positive(int pos)
-{
-	return (pos == 43);
-}
-
-static int	is_negative(int neg)
-{
-	return (neg == 45);
-}
 
 int	ft_atoi(const char *nptr)
 {
@@ -38,11 +23,11 @@ int	ft_atoi(const char *nptr)
 	res = 0;
 	while (nptr[i] != '\0')
 	{
-		while (is_whitespace(nptr[i]))
+		while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 			i++;
-		if (is_positive(nptr[i]) || is_negative(nptr[i]))
+		if (nptr[i] == 43 || nptr[i] == 45)
 		{
-			if (is_negative(nptr[i]))
+			if (nptr[i] == 45)
 				symb = -symb;
 			i++;
 		}
