@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pyxlbs <pyxlbs@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/06 22:25:13 by pyxlbs           ###   ########.fr       */
+/*   Updated: 2023/06/22 21:29:03 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	d;
-
-	d = 0;
-	while (s[d] != '\0')
+	while (*s != '\0')
 	{
-		if (s[d] == (char)c)
-			return ((char *)&s[d]);
-		d++;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
 	if ((char)c == '\0')
-		return ((char *)&s[d]);
+		return ((char *)s);
 	return (0);
 }

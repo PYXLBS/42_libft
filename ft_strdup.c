@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:17:56 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/22 21:07:32 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,14 @@
 
 char	*ft_strdup(const char *s)
 {
-	int		t;
-	char	*u;
+	char	*t;
+	size_t	len;
 
-	t = 0;
-	u = malloc(t + 1);
-	if (u == NULL)
+	len = ft_strlen(s);
+	t = malloc(len + 1);
+	if (t == NULL)
 		return (NULL);
-	while (s[t] != '\0')
-	{
-		u[t] = s[t];
-		t++;
-	}
-	if (u[t] == '\0')
-		return (u);
-	return (0);
+	ft_memcpy(t, s, len);
+	t[len] = '\0';
+	return (t);
 }
