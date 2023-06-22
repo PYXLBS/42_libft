@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:18:30 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/22 22:14:00 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,18 @@
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t	d;
-	size_t	s;
+	size_t	src_len;
 
-	d = 0;
-	s = 0;
-	while (src[s] != '\0')
+	src_len = ft_strlen(src);
+	if (size != '\0')
 	{
-		if (size > d + 1)
+		if (src_len < size)
+			ft_memcpy(dst, src, src_len + 1);
+		else
 		{
-			dst[d] = src[s];
-			d++;
+			ft_memcpy(dst, src, size - 1);
+			dst[size - 1] = '\0';
 		}
-		s++;
 	}
-	if (size != 0)
-		dst[d] = '\0';
-	return (s);
+	return (src_len);
 }

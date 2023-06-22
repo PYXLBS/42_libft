@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:20:59 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:18:35 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/22 22:16:06 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	c;
+	size_t	i;
 
-	c = 0;
-	while (s[c] != '\0')
-		c++;
-	return (c);
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
