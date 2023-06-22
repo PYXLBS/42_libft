@@ -6,37 +6,52 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 16:17:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:14:02 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/22 17:30:12 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	is_whitespace(int ws)
+{
+	return ((ws > 8 && ws < 14) || ws == 32);
+}
+
+static int	is_positive(int pos)
+{
+	return (pos == 43);
+}
+
+static int	is_negative(int neg)
+{
+	return (neg == 45);
+}
+
 int	ft_atoi(const char *nptr)
 {
 	int	i;
-	int	j;
-	int	k;
+	int	symb;
+	int	res;
 
 	i = 0;
-	j = 1;
-	k = 0;
+	symb = 1;
+	res = 0;
 	while (nptr[i] != '\0')
 	{
-		while ((nptr[i] > 8 && nptr[i] < 14) || (nptr[i] == 32))
+		while (is_whitespace(nptr[i]))
 			i++;
-		if (nptr[i] == 43 || nptr[i] == 45)
+		if (is_positive(nptr[i]) || is_negative(nptr[i]))
 		{
-			if (nptr[i] == 45)
-				j = -j;
+			if (is_negative(nptr[i]))
+				symb = -symb;
 			i++;
 		}
-		while (nptr[i] > 47 && nptr[i] < 58)
+		while (ft_isdigit(nptr[i]))
 		{
-			k = (k * 10) + (nptr[i] - 48);
+			res = (res * 10) + (nptr[i] - 48);
 			i++;
 		}
-		return (j * k);
+		return (symb * res);
 	}
 	return (0);
 }

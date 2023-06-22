@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 18:39:57 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:14:37 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/22 17:38:53 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,5 @@
 
 int	ft_isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
-		return (0);
+	return (c >= 48 && c <= 57);
 }
