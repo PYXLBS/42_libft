@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 14:57:48 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:19:26 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/25 12:53:00 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <strings.h>
 # include <stdio.h>
+# include <limits.h>
 
 typedef struct s_list
 {
