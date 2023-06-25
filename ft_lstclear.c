@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:37:35 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:15 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/25 19:24:43 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-
-}
-
-int	main(void)
-{
-	return (0);
+	if (lst == NULL || *lst == NULL)
+		return ;
+	ft_lstclear(&(*lst)->next, del);
+	ft_lstdelone(*lst, del);
+	*lst = NULL;
 }

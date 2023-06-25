@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:36:06 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:10 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/25 19:24:25 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-
-}
-
-int	main(void)
-{
-	return (0);
+	if (lst == NULL || new == NULL)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
