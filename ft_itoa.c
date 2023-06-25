@@ -6,13 +6,13 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:29:09 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/25 16:01:27 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/25 16:25:44 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	get_len(int n)
+static int	get_length(int n)
 {
 	int	len;
 
@@ -70,7 +70,7 @@ char	*ft_itoa(int n)
 	int		len;
 	char	*res;
 
-	len = get_len(n);
+	len = get_length(n);
 	if (n == INT_MIN)
 		return (handle_int_min());
 	res = allocate_memory(len);
