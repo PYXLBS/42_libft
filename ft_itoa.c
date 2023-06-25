@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:29:09 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/25 16:25:44 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/25 16:28:15 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	get_length(int n)
 	return (len);
 }
 
-static char	*handle_int_min(void)
+static char	*secure_int_min(void)
 {
 	char	*res;
 
@@ -72,7 +72,7 @@ char	*ft_itoa(int n)
 
 	len = get_length(n);
 	if (n == INT_MIN)
-		return (handle_int_min());
+		return (secure_int_min());
 	res = allocate_memory(len);
 	if (res == NULL)
 		return (NULL);
