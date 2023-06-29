@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:42:03 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:48 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/29 12:43:35 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-
-}
-
-int	main(void)
-{
-	return (0);
+	if (lst == NULL)
+		return (NULL);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

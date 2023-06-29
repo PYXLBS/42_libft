@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:40:19 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:34 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/29 12:43:21 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-
-}
-
-int	main(void)
-{
-	return (0);
+	if (lst == NULL || f == NULL)
+		return ;
+	while (lst != NULL)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

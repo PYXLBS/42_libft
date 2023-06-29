@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:38:49 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:28 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/29 12:43:08 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-
-}
-
-int	main(void)
-{
-	return (0);
+	if (lst == NULL || del == NULL)
+		return ;
+	del(lst->content);
+	free(lst);
 }

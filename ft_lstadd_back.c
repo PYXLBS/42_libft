@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:34:37 by pabertha          #+#    #+#             */
-/*   Updated: 2023/05/30 17:15:03 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/29 12:41:53 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
+	t_list	*last_node;
 
-}
-
-int	main(void)
-{
-	return (0);
+	if (*lst != NULL)
+	{
+		last_node = ft_lstlast(*lst);
+		last_node->next = new;
+	}
+	else
+		*lst = new;
 }
