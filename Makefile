@@ -6,7 +6,7 @@
 #    By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/12 17:16:25 by pabertha          #+#    #+#              #
-#    Updated: 2023/06/25 18:06:28 by pabertha         ###   ########.fr        #
+#    Updated: 2023/06/29 23:42:44 by pabertha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,7 @@ $(NAME) : $(OBJ)
 bonus : $(OBJ) $(OBJ_BONUS)
 		ar rcs $(NAME) $(OBJ) $(OBJ_BONUS)
 
-%.o : %.c
+%.o : %.c libft.h
 	$(CC) $(CFLAGS) -c $< -o $@
 	
 clean :
