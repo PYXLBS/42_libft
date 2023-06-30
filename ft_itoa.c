@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:29:09 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/29 22:15:53 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/06/30 15:27:43 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ static char	*allocate_memory(int len)
 {
 	char	*res;
 
-	res = (char *)malloc(len + 1);
+	res = ft_calloc(len + 1, 1);
 	if (res == NULL)
 		return (NULL);
 	res[len] = '\0';
