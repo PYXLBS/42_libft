@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:21:12 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/29 22:20:58 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/07/03 23:53:58 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (s == NULL)
+		return ;
 	if (*s != '\0')
 		write(fd, s, ft_strlen(s));
 }

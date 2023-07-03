@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 16:29:09 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/30 15:27:43 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/07/03 23:51:45 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static char	*secure_int_min(void)
 {
 	char	*res;
 
-	res = malloc(12);
+	res = ft_calloc(12, 1);
 	if (res == NULL)
 		return (NULL);
 	ft_strlcpy(res, "-2147483648", 12);

@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:27:08 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/29 22:24:07 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/07/03 23:54:57 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	unsigned int	i;
 	char			*str;
 
+	if (s == NULL || f == NULL)
+		return (NULL);
 	i = 0;
-	str = (char *)malloc(ft_strlen(s) + 1);
-	if (s == NULL || f == NULL || str == NULL)
+	str = ft_calloc(ft_strlen(s) + 1, 1);
+	if (str == NULL)
 		return (NULL);
 	while (s[i] != '\0')
 	{

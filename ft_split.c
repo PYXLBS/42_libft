@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 17:22:17 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/29 22:21:21 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/07/03 23:54:06 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	count = count_elements(s, c);
-	elements = (char **)malloc(8 * (count + 1));
+	elements = (char **)ft_calloc(8 * (count + 1), 1);
 	if (elements == NULL)
 		return (NULL);
 	while (i < count)

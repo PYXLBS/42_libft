@@ -6,7 +6,7 @@
 /*   By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:24:22 by pabertha          #+#    #+#             */
-/*   Updated: 2023/06/29 22:19:35 by pabertha         ###   ########.fr       */
+/*   Updated: 2023/07/03 23:53:20 by pabertha         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	o;
 
 	o = 0;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	if (dest > src)
 	{
 		while (n > 0)
