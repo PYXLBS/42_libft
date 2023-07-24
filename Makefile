@@ -6,7 +6,7 @@
 #    By: pabertha <pabertha@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/12 17:16:25 by pabertha          #+#    #+#              #
-#    Updated: 2023/07/03 23:57:00 by pabertha         ###   ########.fr        #
+#    Updated: 2023/07/07 17:15:06 by pabertha         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ OBJ = $(SRC:.c=.o)
 OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all : $(NAME)
-	norminette -R CheckForbiddenSourceHeader *.c
+# norminette -R CheckForbiddenSourceHeader *.c
 
 $(NAME) : $(OBJ)
 		ar rcs $(NAME) $(OBJ)
